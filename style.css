@@ -4,6 +4,7 @@ body {
   display: block;
   margin-top: 100px;
   box-sizing: border-box;
+  background-color: var(--black);
 }
 
 :root {
@@ -11,7 +12,9 @@ body {
   --purple: #6c63ff;
   --light-grey: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --secondary-color: #1ab2a3;
 }
+
 h2 {
   font-size: 48px;
 }
@@ -23,7 +26,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 600;
-  color: var(--black);
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -33,80 +36,4 @@ h1 {
 h3 {
   font-size: 24px;
   opacity: 0.7;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.contact-me-link {
-  background: var(--purple);
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: none;
-}
-
-.about-me-link {
-  color: var(--purple);
-  border: 1px solid var(--purple);
-}
-
-.homepage-link {
-  color: var(--purple);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  margin: 30px 0;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-  line-height: 1.5;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--purple);
-  font-size: 28px;
-  text-decoration: none;
-}
-.yoga-p,
-.weather-p,
-.yogurt-p {
-  font-size: 18px;
-  line-height: 1.5;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.container p {
-  text-align: none;
-}
-
-.yoga-link,
-.weather-link,
-.yogurt-link {
-  background: var(--purple);
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
 }
