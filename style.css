@@ -17,7 +17,8 @@ body {
   --black: rgb(0, 0, 0);
   --purple: #6c63ff;
   --secondary-color: #1ab2a8;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0px 1px 15px 3px rgb(82, 83, 83);
+  --box-glow: 0px 1px 10px rgb(196, 218, 218);
   --cream: #dad8df;
   --white: #fff;
 }
@@ -31,20 +32,19 @@ body {
   padding: 8px;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
 .hero {
   background-color: var(--black);
 }
-.container {
-  margin: 0 13px;
-  padding: 0 12px;
+.hero .container {
+  margin: 0 15px;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Playfair Display", serif;
   color: var(--white);
 }
@@ -104,4 +104,73 @@ p {
 }
 img {
   border-radius: 15px;
+}
+
+section img {
+  box-shadow: var(--box-glow);
+  max-height: 25rem;
+}
+
+.my-projects .heading {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.featured-project p:nth-child(1) {
+  margin: 10px 0px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.featured-project p:nth-child(2) {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.projects-content {
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+
+.projects-content .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--purple);
+}
+
+.weather-app {
+  margin-left: 3rem;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .typing h2 {
+    font-size: 20px;
+  }
+  .hero {
+    width: 350px;
+  }
+
+  .hero img {
+    width: 310px;
+  }
+  .weather-app {
+    margin-left: 0;
+  }
 }
