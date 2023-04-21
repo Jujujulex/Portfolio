@@ -44,7 +44,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Playfair Display", serif;
   color: var(--white);
 }
@@ -224,6 +225,30 @@ section img {
   font-size: 18px;
 }
 
+/*work page*/
+.work {
+  color: var(--secondary-color);
+  font-size: 50px;
+}
+.work-details h4 {
+  color: var(--secondary-color);
+}
+.work-details p {
+  font-size: 12px;
+}
+
+.work-details img {
+  box-shadow: var(--box-shadow);
+}
+
+.work-details .blt {
+  margin-top: 15px;
+}
+
+.work-details .adj-pdn {
+  padding-right: 2rem;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
@@ -249,6 +274,17 @@ section img {
 .greeting {
   padding-top: 2.5rem;
 }
+/*work page*/
+.work-details .blt {
+  margin-bottom: 3rem;
+}
+.blt h4 {
+  margin-top: 0;
+}
+.work-details .adj-pdn {
+  padding-right: 1rem;
+}
+
 @media (min-width: 750px) {
   .about-bio {
     padding-left: 3rem;
