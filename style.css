@@ -35,6 +35,11 @@ body {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+.nav-link.active {
+  border-bottom: 2px solid var(--secondary-color);
+  width: fit-content;
+}
 .hero {
   background-color: var(--black);
 }
@@ -155,6 +160,31 @@ section img {
 .weather-app {
   margin-left: 3rem;
 }
+.contact h4 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+.contact p {
+  max-width: 550px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.icons {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+.icons i {
+  color: var(--white);
+  font-size: 30px;
+  cursor: pointer;
+  padding-inline: 25px;
+  transition: 200ms;
+}
 
 /*about page css*/
 .about {
@@ -248,7 +278,22 @@ section img {
 .work-details .adj-pdn {
   padding-right: 2rem;
 }
+/*contact page*/
 
+.my-contact h4 {
+  color: var(--secondary-color);
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+.my-contact p {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.my-contact a {
+  text-decoration: overline;
+  color: var(--purple);
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
